@@ -4,10 +4,8 @@ from win10toast import ToastNotifier
 from textblob import Word
 import win32console,win32gui
 
-# Confidence based correction system
-# Keyboard hooks for auto-correction
-# "Is it a mistake really?" algorithm
-# Processing in background capability
+## Made By Remo Under Apache-2.0 license
+
 
 
 class Prometheus:
