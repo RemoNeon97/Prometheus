@@ -57,7 +57,7 @@ class Prometheus:
             if key == Key.backspace:
                 self.letters.pop()
 
-    def inject_hooks(self):
+    def hook(self):
         self.listener = Listener(self.on_press,self.on_release)
         self.listener.start()
         self.notifier.show_toast(title="Prometheus",msg="PE and RE hooks are initialized.",threaded=True)
@@ -66,7 +66,7 @@ class Prometheus:
 
 if __name__ == "__main__":
     corrector = Prometheus()
-    corrector.inject_hooks()
+    corrector.hook()
     win32gui.ShowWindow(win32console.GetConsoleWindow(),0)
     #print("[+] Hooks injected.")
     corrector.listener.join() 
