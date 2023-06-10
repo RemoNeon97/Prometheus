@@ -17,7 +17,7 @@
 ## Install The Requirements
 
 ```bash
-  pip install requirements.txt -r
+  pip install -r requirements.txt
 ```
 
 
